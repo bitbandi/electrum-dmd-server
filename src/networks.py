@@ -10,5 +10,15 @@ params = {
         'pubkey_address': 111,
         'script_address': 196,
         'genesis_hash': '000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943'
+    },
+    'diamond_main': {
+        'pubkey_address': 90,
+        'script_address': 8,
+        'genesis_hash': '0000029b550c0095513d9bb9dd14f88442573baca94d70e49018a510979c0f9b'
+    },
+    'diamond_test': {
+        'pubkey_address': 111,
+        'script_address': 196,
+        'genesis_hash': '???'
     }
 }
