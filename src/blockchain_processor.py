@@ -135,8 +135,8 @@ class BlockchainProcessor(Processor):
         tx_per_second = (1-alpha2) * tx_per_second + alpha2 * num_tx / delta
         self.avg_time = seconds_per_block, tx_per_second, n+1
         if self.storage.height%100 == 0 \
-            or (self.storage.height%10 == 0 and self.storage.height >= 300000)\
-            or self.storage.height >= 1000000:
+            or (self.storage.height%10 == 0 and self.storage.height >= 1300000)\
+            or self.storage.height >= 1350000:
             msg = "block %d (%d %.2fs) %s" %(self.storage.height, num_tx, delta, self.storage.get_root_hash().encode('hex'))
             msg += " (%.2ftx/s, %.2fs/block)" % (tx_per_second, seconds_per_block)
             run_blocks = self.storage.height - self.start_catchup_height
